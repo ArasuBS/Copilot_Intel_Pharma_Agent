@@ -21,8 +21,8 @@ def search_pubmed(term="antibody drug conjugate"):
     
     def save_results(papers):
 
-    with open("data/pubmed_results.json", "w", encoding="utf-8") as f:
-        json.dump(
+        with open("data/pubmed_results.json", "w", encoding="utf-8") as f:
+            json.dump(
             papers,
             f,
             indent=2,
