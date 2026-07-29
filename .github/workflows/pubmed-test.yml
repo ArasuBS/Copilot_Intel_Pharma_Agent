@@ -25,6 +25,10 @@ jobs:
       - name: Run PubMed Script
         run: |
           python ingest_pubmed.py
+          
+      - name: Run RSS Script
+        run: |          
+          python ingest_rss.py
 
       - name: Upload PubMed Results
         uses: actions/upload-artifact@v4
