@@ -2,22 +2,227 @@ topics:
 
   - name: ADC
 
-  - name: Bispecific Antibodies
+    keywords:
+      - ADC
+      - antibody-drug conjugate
+      - conjugated antibody
+      - targeted cytotoxic therapy
+      - targeted payload delivery
+      - precision oncology
+      - tumor directed therapy
+      - next generation ADC
+      - ADC platform
+      - ADC development
+      - ADC manufacturing
+      - ADC pipeline
+      - ADC clinical trial
+      - ADC technology
 
-  - name: Cell Line Development
+    targets:
+      - HER2
+      - TROP2
+      - B7H3
+      - CLDN18.2
+      - EGFR
+      - HER3
+      - MET
+      - Nectin4
+      - BCMA
+      - CD22
+      - CD30
+      - CD33
+      - CD70
+      - Folate Receptor Alpha
+      - LIV1
 
-  - name: NAMS
+    payloads:
+      - DXd
+      - MMAE
+      - MMAF
+      - PBD
+      - SN38
+      - DM1
+      - DM4
+      - Auristatin
+      - Maytansinoid
+      - Camptothecin
+      - Topoisomerase I Inhibitor
+      - Exatecan
+      - DUBA
+      - Pyrrolobenzodiazepine
+      - Tubulin Inhibitor
 
-  - name: Biologics Manufacturing
+    technologies:
+      - Site-Specific Conjugation
+      - Cysteine Conjugation
+      - Lysine Conjugation
+      - Tubulin Inhibitor
+      - Click Chemistry
+      - Linker Technology
+      - Cleavable Linker
+      - Non-Cleavable Linker
+      - DAR Optimization
+      - Homogeneous ADC
+      - Fc Engineering
+      - Bystander Effect
+      - Tumor Selective Delivery
+      - Payload Optimization
+      - Antibody Engineering
 
-  - name: Cell Therapy
+    antibody_formats:
+      - Monoclonal Antibody
+      - Humanized Antibody
+      - Fully Human Antibody
+      - Bispecific Antibody
+      - Biparatopic Antibody
+      - Multispecific Antibody
+      - IgG1
+      - IgG2
+      - IgG4
+      - Engineered Fc
+      - Nanobody
+      - T Cell Engager
+      - Recombinant Antibody
+      - Dual Targeting Antibody
+      - Antibody Fragment
 
-  - name: Gene Therapy
+    indications:
+      - Breast Cancer
+      - Gastric Cancer
+      - NSCLC
+      - Ovarian Cancer
+      - Cervical Cancer
+      - Urothelial Carcinoma
+      - Multiple Myeloma
+      - AML
+      - Lymphoma
+      - Colorectal Cancer
+      - Pancreatic Cancer
+      - Endometrial Cancer
+      - Head and Neck Cancer
+      - Hepatocellular Carcinoma
+      - Prostate Cancer
 
-  - name: Radiopharmaceuticals
+    watch_companies:
+      - Daiichi Sankyo
+      - AstraZeneca
+      - Seagen
+      - Pfizer
+      - Gilead
+      - Roche
+      - AbbVie
+      - BioNTech
+      - DualityBio
+      - Sutro Biopharma
+      - Mersana
+      - ADC Therapeutics
+      - ImmunoGen
+      - Genmab
+      - Shanghai Henlius
 
-  - name: AI Drug Discovery
+    products:
+      - Enhertu
+      - Datroway
+      - Padcev
+      - Trodelvy
+      - Adcetris
+      - Kadcyla
+      - Elahere
+      - Besponsa
+      - Mylotarg
+      - Zynlonta
+      - Tivdak
+      - Polivy
+      - Blenrep
+      - Disitamab Vedotin
+      - Loncastuximab
 
-  - name: Protein Degraders
+    competitor_cdmos:
+      - Syngene
+      - Aragen
+      - Sai Life Sciences
+      - Jubilant Biosys
+      - Anthem Biosciences
+      - Piramal Pharma
+      - Aurobindo Pharma
+      - Laurus Bio
+      - Lonza
+      - WuXi Biologics
+      - WuXi AppTec
+      - Samsung Biologics
+      - Catalent
+      - AGC Biologics
+      - Recipharm
 
-  - name: Peptides
+    competitor_cros:
+      - Syngene
+      - Aragen
+      - Sai Life Sciences
+      - Jubilant Biosys
+      - Aurigene
+      - Evotec
+      - Charles River
+      - Pharmaron
+      - Crown Bioscience
+      - WuXi AppTec
+      - Eurofins Discovery
+      - Curia
+      - Frontage Laboratories
+      - Labcorp Drug Development
+      - Medicilon
+
+    manufacturing:
+      - Payload Synthesis
+      - Linker Synthesis
+      - Cytotoxic Manufacturing
+      - Conjugation
+      - ADC Process Development
+      - Analytical Characterization
+      - GMP Manufacturing
+      - Fill Finish
+      - Technology Transfer
+      - Commercial Manufacturing
+      - Stability Studies
+      - Scale Up
+      - Quality Control
+      - Quality Assurance
+      - Containment Manufacturing
+
+    deal_types:
+      - Licensing
+      - Out Licensing
+      - Co Development
+      - Research Collaboration
+      - Strategic Alliance
+      - Manufacturing Agreement
+      - Commercialization Agreement
+      - Acquisition
+      - Merger
+      - Joint Venture
+      - Option Agreement
+      - Platform Partnership
+      - Technology Partnership
+      - Asset Purchase
+      - Geographic Licensing
+
+    strategic_questions:
+      - Which ADC targets are attracting the most licensing activity?
+      - Which ADC targets are showing increasing clinical momentum?
+      - Which payload technologies are gaining adoption?
+      - Which linker technologies are repeatedly appearing in deals and publications?
+      - Which companies are most active in ADC partnerships?
+      - Which companies are emerging as ADC innovators?
+      - Which indications are attracting the most ADC investment?
+      - Which approved ADCs are receiving label expansions?
+      - Which ADC technologies are becoming next-generation standards?
+      - Which CROs are expanding ADC discovery capabilities?
+      - Which CDMOs are expanding ADC manufacturing capacity?
+      - Which companies are investing in ADC manufacturing facilities?
+      - Are bispecific ADCs becoming more common?
+      - Which regions are becoming ADC innovation hubs?
+      - Which ADC platforms are attracting acquisition interest?
+      - Which emerging targets are gaining momentum?
+      - What manufacturing bottlenecks are appearing in ADC development?
+      - What implications do ADC trends have for CRO/CDMO demand?
+      - Which competitors are strengthening ADC capabilities?
+      - Which trends are likely to impact ADC outsourcing over the next 24 months?
