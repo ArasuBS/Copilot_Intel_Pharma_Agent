@@ -27,6 +27,7 @@ for article in feed.entries[:5]:
     articles.append({
         "title": re.sub('<.*?>', '', unescape(article.title)),
         "link": article.link,
+        "date": article.get("published", ""),
         "source": "Fierce Pharma"
     })
 
@@ -39,3 +40,4 @@ for article in articles:
     print(f"SOURCE: {article['source']}")
     print(f"TITLE: {article['title']}")
     print(f"LINK: {article['link']}")
+    print(flink": {article['date']}")
