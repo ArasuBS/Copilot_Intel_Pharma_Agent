@@ -80,10 +80,7 @@ if __name__ == "__main__":
     
     adc = get_topic(topics, "ADC")
     
-    keywords = [
-    "antibody drug conjugate",
-    "antibody-drug conjugate"
-    ]
+    keywords = adc["keywords"][:2]
     
     query = ' OR '.join([f'"{k}"' for k in keywords])
     
