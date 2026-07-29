@@ -70,12 +70,14 @@ def fetch_summaries(ids):
 if __name__ == "__main__":
 
     topics = load_topics()
-
-    first_keyword = topics["topics"][0]["keywords"][0]
-
-    print(f"Using keyword: {first_keyword}")
-
-    print(topics["topics"][0]["name"])
+    
+    keywords = topics["topics"][0]["keywords"][:3]
+    
+    query = " OR ".join(keywords)
+    
+    print(f"Using query: {query}")
+    
+    ids = search_pubmed(query)
 
     ids = search_pubmed(first_keyword)
 
