@@ -71,9 +71,13 @@ if __name__ == "__main__":
 
     topics = load_topics()
 
+    first_keyword = topics["topics"][0]["keywords"][0]
+
+    print(f"Using keyword: {first_keyword}")
+
     print(topics["topics"][0]["name"])
 
-    ids = search_pubmed()
+    ids = search_pubmed(first_keyword)
 
     papers = fetch_summaries(ids)
 
