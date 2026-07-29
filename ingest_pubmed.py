@@ -65,7 +65,14 @@ def fetch_summaries(ids):
         })
 
     return papers
+    
+def get_topic(topics_data, topic_name):
 
+    for topic in topics_data["topics"]:
+        if topic["name"] == topic_name:
+            return topic
+
+    return None
 
 if __name__ == "__main__":
 
