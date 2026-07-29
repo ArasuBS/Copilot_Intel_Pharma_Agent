@@ -18,4 +18,7 @@ for article in feed.entries[:5]:
         "source": "Fierce Pharma"
     })
 
-print(articles)
+for article in articles:
+    print("-" * 80)
+    print(f"SOURCE: {article['source']}")
+    print(f"TITLE: {article['title']}")
