@@ -1,1 +1,27 @@
+name: PubMed Test
 
+on:
+  workflow_dispatch:
+
+jobs:
+  run-pubmed:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Dependencies
+        run: |
+          pip install requests
+
+      - name: Run PubMed Script
+        run: |
+          python ingest_pubmed.py
