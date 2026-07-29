@@ -20,7 +20,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install requests
+          pip install requirements.txt
 
       - name: Run PubMed Script
         run: |
