@@ -14,7 +14,7 @@ articles = []
 
 for article in feed.entries[:5]:
     articles.append({
-        "title": "title": re.sub('<.*?>', '', unescape(article.title)),
+        "title": re.sub('<.*?>', '', unescape(article.title)),
         "source": "Fierce Pharma"
     })
 
