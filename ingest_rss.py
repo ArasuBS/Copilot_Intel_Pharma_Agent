@@ -1,6 +1,17 @@
+import json
 from html import unescape
 import re
 import feedparser
+
+def save_results(articles):
+
+    with open("data/rss_results.json", "w", encoding="utf-8") as f:
+        json.dump(
+            articles,
+            f,
+            indent=2,
+            ensure_ascii=False
+        )
 
 RSS_URL = "https://www.fiercepharma.com/rss/xml"
 
@@ -18,6 +29,10 @@ for article in feed.entries[:5]:
         "link": article.link,
         "source": "Fierce Pharma"
     })
+
+save_results(articles)
+
+print("Saved results to data/rss_results.json")
 
 for article in articles:
     print("-" * 80)
