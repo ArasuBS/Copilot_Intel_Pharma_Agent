@@ -25,3 +25,9 @@ jobs:
       - name: Run PubMed Script
         run: |
           python ingest_pubmed.py
+
+      - name: Upload PubMed Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: pubmed-results
+          path: data/pubmed_results.json
