@@ -391,7 +391,44 @@ topics:
       - Premas Biotech
       - CellVivo
       - Organisyl
-
+      - Javelin Biotech
+      - Premas biotech
+      
+    computational_nams_companies:
+      - Axiom
+      - Certara
+      - Simulations Plus
+      - Schrödinger
+      - BioAge
+      - Insilico Medicine
+      - Recursion
+      - Exscientia
+      - Owkin
+      - BenevolentAI
+      - Unlearn
+      - Aitia
+      - GNS Healthcare
+      - Tempus
+      - PathAI
+      
+    computational_technologies:
+      - Digital Twin
+      - Human Digital Twin
+      - Digital Twin Pharmacology
+      - Virtual Patient
+      - Virtual Clinical Trial
+      - PBPK
+      - Quantitative Systems Pharmacology
+      - QSP
+      - Mechanistic Modeling
+      - Systems Biology
+      - Multi Scale Modeling
+      - AI Toxicology
+      - Computational Toxicology
+      - In Silico Pharmacology
+      - Predictive Modeling
+      - Computational Pathology
+      
     pharma_adopters:
       - Moderna
       - Roche
@@ -463,24 +500,43 @@ topics:
       - Regulatory Qualification14  
       - Regulatory Acceptance
 
-    strategic_questions:
+   strategic_questions:
       - Which NAM technologies are moving toward routine pharma adoption?
       - Which pharma companies are investing most heavily in NAMs?
       - Which organoid technologies are achieving commercial scale?
       - Which organ-on-chip technologies are gaining industry adoption?
+      - Which computational NAM technologies are gaining industry adoption?
+      - Which AI-enabled NAM platforms are demonstrating real-world utility?
       - Which CROs are building NAM capabilities?
       - Which competitors are launching NAM service offerings?
       - Which NAM companies are attractive partnership candidates?
-      - Which NAM companies are acquisition targets?
+      - Which NAM companies are attractiven targets?
       - Which NAM platforms are demonstrating superior human PK prediction?
       - Which NAM platforms are demonstrating efficacy prediction capability?
       - Which NAM platforms are demonstrating toxicology prediction capability?
+      - Which NAM platforms demonstrating predictive toxicology capability?
+      - Which digital twin platforms are demonstrating translational value?
+      - Which PBPK and QSP platforms are influencing drug development decisions?
       - Which NAM technologies are reducing dependence on animal studies?
       - Which NAM platforms are receiving regulatory recognition?
-      - Which disease areas are seeing the fastest NAM adoption?
-      - What barriers are slowing broad industry adoption?
+      - Which NAM platforms are progressing through validation and qualification pathways?
+      - Which NAM technologies are being referenced by FDA, EMA, OECD, ICCVAM or NC3Rs?
+      - Which disease areas are seeing the fastest NAM adoption by FDA, EMA, OECD, ICCVAM or NC3Rsindustry adoption?
       - What is likely to become standard practice in the next 5 years?
       - Which NAM technologies could realistically replace selected animal studies in the next 3 to 5 years?
       - Which NAM technologies pose the greatest long-term disruption risk to traditional animal-based DMPK and toxicology services?
       - What implications do NAM adoption trends have for CRO business models?
       - What implications do NAM adoption trends have for CDMO business models?
+      - What implications do NAM adoptionomputational approaches converging into integrated workflows?
+      - Which NAM platforms are demonstrating the strongest translational predictivity?
+      - Which technologies are becoming preferred for DILI prediction?
+      - Which technologies are becoming preferred for nephrotoxicity prediction?
+      - Which technologies are becoming preferred for efficacy prediction?
+      - Which NAM approaches are being adopted for IND-enabling programs?
+      - Which regulatory developments are accelerating NAM adoption?
+      - Which regulatory developments are creating barriers to NAM adoption?
+      - Which pharma companies are partnering with NAM technology providers?
+      - Which computational NAM companies are emerging as strategic partners for pharma and CROs?
+      - Will future DMPK workflows combine organoids, organ-on-chip systems, PBPK, QSP and digital twins?
+      - Which competitors are building integrated experimental and computational NAM platforms?
+      - What signals indicate that NAMs are transitioning from innovation projects to routine drug development tools?
