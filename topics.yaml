@@ -488,7 +488,7 @@ topics:
       - Service Partnership
       - Regulatory Collaboration
       
-   regulatory section:
+   regulatory_section:
       - FDA Modernization Act 2.0
       - FDA NAM Program
       - EMA NAMs
@@ -496,8 +496,8 @@ topics:
       - OECD Validation
       - ICCVAM
       - NC3Rs
-      - Validation Studies13 
-      - Regulatory Qualification14  
+      - Validation Studies 
+      - Regulatory Qualification  
       - Regulatory Acceptance
 
    strategic_questions:
