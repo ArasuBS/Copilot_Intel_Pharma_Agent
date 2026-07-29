@@ -1,3 +1,5 @@
+from html import unescape
+import re
 import feedparser
 
 RSS_URL = "https://www.fiercepharma.com/rss/xml"
@@ -12,7 +14,7 @@ articles = []
 
 for article in feed.entries[:5]:
     articles.append({
-        "title": article.title,
+        "title": "title": re.sub('<.*?>', '', unescape(article.title)),
         "source": "Fierce Pharma"
     })
 
