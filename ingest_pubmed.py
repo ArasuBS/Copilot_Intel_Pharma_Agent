@@ -78,7 +78,12 @@ if __name__ == "__main__":
 
     topics = load_topics()
     
-    keywords = topics["topics"][0]["keywords"][:3]
+    adc = get_topic(topics, "ADC")
+    
+    keywords = [
+        k for k in adc["keywords"][:3]
+        if k != "ADC"
+    ]
     
     query = " OR ".join(keywords)
     
