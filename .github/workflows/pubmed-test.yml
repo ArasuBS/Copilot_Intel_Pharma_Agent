@@ -35,3 +35,9 @@ jobs:
         with:
           name: pubmed-results
           path: data/pubmed_results.json
+
+      - name: Upload RSS Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: rss-results
+          path: data/rss_results.json
