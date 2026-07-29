@@ -40,4 +40,4 @@ for article in articles:
     print(f"SOURCE: {article['source']}")
     print(f"TITLE: {article['title']}")
     print(f"LINK: {article['link']}")
-    print(f"link: {article['date']}")
+    print(f"DATE: {article['date']}")
