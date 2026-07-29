@@ -10,8 +10,8 @@
 | Nature Biotechnology | Journal | RSS | Scientific signals |
 | Cell | Journal | RSS | Scientific signals |
 | Science | Journal | RSS | Scientific signals |
-| Pub | Journal | RSS | Scientific signals |
-| Journal | RSS | Scientific atabase | API | Trial monitoring |
+| Pubmed | Journal | RSS | Scientific database |
+| Journal | RSS | Scientific database | API | Trial monitoring |
 | FDA | Regulatory | RSS/Web | Approvals and guidance |
 | EMA | Regulatory | Web | Regulatory updates |
 | OECD | Regulatory | Web | NAMS validation |
