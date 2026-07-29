@@ -10,8 +10,10 @@
 | Nature Biotechnology | Journal | RSS | Scientific signals |
 | Cell | Journal | RSS | Scientific signals |
 | Science | Journal | RSS | Scientific signals |
-| Pubmed | Journal | RSS | Scientific database |
-| Journal | RSS | Scientific database | API | Trial monitoring |
+| Pubmed | Database | API | Scientific database |
+| Europe PMC | Database | API | Scientific database |
+| clinicalTrials.gov | Database | API | Trial monitoring |
+| NIH Reporter | Database | API | Funding Intelligence |
 | FDA | Regulatory | RSS/Web | Approvals and guidance |
 | EMA | Regulatory | Web | Regulatory updates |
 | OECD | Regulatory | Web | NAMS validation |
