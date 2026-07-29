@@ -68,6 +68,8 @@ if __name__ == "__main__":
 
     save_results(papers)
 
+    print("Saved results to data/pubmed_results.json")
+
     print(f"Found {len(papers)} papers\n")
 
     for paper in papers:
