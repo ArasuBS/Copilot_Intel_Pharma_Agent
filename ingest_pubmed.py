@@ -1,9 +1,16 @@
 import requests
 import json
+import yaml
 
 SEARCH_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
 SUMMARY_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"
 
+def load_topics():
+
+    with open("topics.yaml", "r", encoding="utf-8") as f:
+        topics = yaml.safe_load(f)
+
+    return topics
 
 def search_pubmed(term="antibody drug conjugate"):
     params = {
@@ -61,6 +68,10 @@ def fetch_summaries(ids):
 
 
 if __name__ == "__main__":
+
+    topics = load_topics()
+
+    print(topics["topics"][0]["name"])
 
     ids = search_pubmed()
 
