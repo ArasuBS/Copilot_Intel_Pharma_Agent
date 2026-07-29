@@ -1,1 +1,90 @@
+trade_media:
 
+  - Fierce Pharma
+  - Fierce Biotech
+  - Endpoints News
+  - BioPharma Dive
+  - STAT
+  - Contract Pharma
+  - Pharmaceutical Technology
+  - BioProcess International
+  - GEN
+  - Express Pharma
+  - BioSpectrum India
+  - Pharma Manufacturing
+  - Outsourced Pharma
+  - Chemical and Engineering News
+
+scientific_journals:
+
+  - Nature Biotechnology
+  - Nature Medicine
+  - Nature Reviews Drug Discovery
+  - Cell
+  - Cell Reports Medicine
+  - Science
+  - Science Translational Medicine
+  - Molecular Therapy
+  - Cancer Discovery
+  - Clinical Cancer Research
+  - Blood
+  - Journal of Clinical Oncology
+  - The Lancet
+  - New England Journal of Medicine
+  - Drug Discovery Today
+
+regulatory_agencies:
+
+  - FDA
+  - EMA
+  - MHRA
+  - PMDA
+  - ICH
+  - WHO
+  - OECD
+  - ICCVAM
+  - NC3Rs
+  - FDA NAM Program
+  - FDA Modernization Act 2.0
+
+conferences:
+
+  - AACR
+  - ASCO
+  - ESMO
+  - SITC
+  - PEGS
+  - BIO International
+  - DIA
+  - AAPS
+  - CPHI
+  - JP Morgan Healthcare Conference
+
+public_databases:
+
+  - PubMed
+  - Europe PMC
+  - ClinicalTrials.gov
+  - NIH Reporter
+
+specialist_sources:
+
+  ADC:
+
+    - ADC Review
+    - AACR
+    - ASCO
+    - Cancer Discovery
+
+  NAMS:
+
+    - Emulate
+    - InSphero
+    - MIMETAS
+    - TissUse
+    - CN Bio
+    - FDA
+    - EMA
+    - OECD
+    - NC3Rs
+    - ICCVAM
