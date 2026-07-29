@@ -8,5 +8,12 @@ feed = feedparser.parse(RSS_URL)
 
 print(f"Found {len(feed.entries)} articles")
 
+articles = []
+
 for article in feed.entries[:5]:
-    print(article.title)
+    articles.append({
+        "title": article.title,
+        "source": "Fierce Pharma"
+    })
+
+print(articles)
