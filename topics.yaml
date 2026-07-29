@@ -17,6 +17,7 @@ topics:
       - ADC pipeline
       - ADC clinical trial
       - ADC technology
+      - dual payload ADC
 
     targets:
       - HER2
@@ -56,6 +57,7 @@ topics:
       - Site-Specific Conjugation
       - Cysteine Conjugation
       - Lysine Conjugation
+      - orthogonal dula site conjugation
       - Tubulin Inhibitor
       - Click Chemistry
       - Linker Technology
@@ -68,6 +70,7 @@ topics:
       - Tumor Selective Delivery
       - Payload Optimization
       - Antibody Engineering
+      - multivalent linkers
 
     antibody_formats:
       - Monoclonal Antibody
@@ -226,3 +229,258 @@ topics:
       - What implications do ADC trends have for CRO/CDMO demand?
       - Which competitors are strengthening ADC capabilities?
       - Which trends are likely to impact ADC outsourcing over the next 24 months?
+
+  - name: NAMS
+
+    keywords:
+      - Animal Alternatives
+      - Animal Free Testing
+      - Human Relevant Models
+      - Human Biology Models
+      - Translational Biology
+      - Predictive Biology
+      - Precision Disease Models
+      - Advanced In Vitro Models
+      - Microphysiological Systems
+      - MPS
+      - Alternative Toxicology
+      - Next Generation Risk Assessment
+      - Human Centric Drug Development
+
+    organoid_models:
+      - Patient Derived Organoid
+      - PDO
+      - Tumor Organoid
+      - Liver Organoid
+      - Kidney Organoid
+      - Lung Organoid
+      - Gut Organoid
+      - Brain Organoid
+      - Cardiac Organoid
+      - Vascularized Organoid
+      - Multi Cellular Liver Organoid
+      - Disease Specific Organoid
+      - Personalized Organoid Model
+      - Organoid Biobank
+      - Immune Competent Organoid
+
+    organ_on_chip:
+      - Liver On Chip
+      - Kidney On Chip
+      - Lung On Chip
+      - Gut On Chip
+      - Blood Brain Barrier On Chip
+      - Tumor On Chip
+      - Skin On Chip
+      - Heart On Chip
+      - Multi Organ On Chip
+      - Human On Chip
+      - Microphysiological System
+      - MPS
+      - Organ Chip
+      - Vascular Chip
+      - Perfused Organ Model
+
+    advanced_models:
+      - Spheroid
+      - Multicellular Spheroid
+      - Multi Cellular Liver Spheroid
+      - Tumor Microenvironment
+      - TME
+      - Immune Microenvironment
+      - Co Culture System
+      - 3D Cell Culture
+      - Ex Vivo Tissue Model
+      - Precision Disease Model
+      - Human Relevant Model
+      - Organotypic Culture
+      - 4D Tissueoid
+      - Tissue Engineering
+      - Patient Avator Model
+
+    manufacturing_and_scaleup:
+      - Bioreactor Organoid Production
+      - Large Scale Organoid Manufacturing
+      - Organoid Scale Up
+      - Automated Organoid Production
+      - Perfusion Bioreactor
+      - ECM Based Organoid Culture
+      - Organoid Bioprocessing
+      - GMP Organoid Manufacturing
+      - Automatable Culture Systems
+      - High Throughput Organoid Production
+      - Scaffold Based Culture
+      - Scaffold Free Culture
+      - Hydrogel Culture
+      - Media Optimization
+      - Process Development
+      - scafold based culture
+      
+    dmpk_applications:
+      - ADME
+      - Drug Metabolism
+      - Pharmacokinetics
+      - PK Prediction
+      - Human PK Prediction
+      - Bioavailability
+      - Clearance
+      - Hepatic Clearance
+      - Renal Clearance
+      - CYP450 Metabolism
+      - CYP Induction
+      - CYP Inhibition
+      - Drug Drug Interaction
+      - DDI Prediction
+      - Plasma Protein Binding
+
+    tox_applications:
+      - DILI
+      - Drug Induced Liver Injury
+      - Hepatotoxicity
+      - Nephrotoxicity
+      - Cardiotoxicity
+      - Neurotoxicity
+      - Pulmonary Toxicity
+      - Safety Pharmacology
+      - Translational Toxicology
+      - Repeat Dose Toxicity
+      - Chronic Toxicity
+      - Off Target Toxicity
+      - Human Toxicity Prediction
+      - Predictive Toxicology
+      - Toxicology Assessment
+
+    efficacy_applications:
+      - Efficacy Prediction
+      - Translational Efficacy
+      - Disease Modeling
+      - Biomarker Discovery
+      - Precision Medicine
+      - Patient Stratification
+      - Responder Prediction
+      - Mechanism Of Action
+      - Proof Of Concept
+      - Clinical Predictivity
+      - Personalized Medicine
+      - Disease Progression
+      - Translational Pharmacology
+      - Target Validation
+      - Drug Response Prediction
+
+    adoption_stage:
+      - Academic Research
+      - Proof Of Concept
+      - Translational Validation
+      - Industry Evaluation
+      - Early Adoption
+      - Regulatory Engagement
+      - Regulatory Qualification
+      - Regulatory Acceptance
+      - Commercial Deployment
+      - Industry Standard
+
+    watch_companies:
+      - Emulate
+      - InSphero
+      - TissUse
+      - MIMETAS
+      - CN Bio
+      - Nortis
+      - Cellesce
+      - Pandorum Technologies
+      - Premas Biotech
+      - CellVivo
+      - Organisyl
+
+    pharma_adopters:
+      - Moderna
+      - Roche
+      - AstraZeneca
+      - GSK
+      - Novartis
+      - Pfizer
+      - Merck
+      - Sanofi
+      - Bayer
+      - Johnson and Johnson
+      - AbbVie
+      - Boehringer Ingelheim
+      - Bristol Myers Squibb
+      - Takeda
+
+    competitor_cros:
+      - Syngene
+      - Aragen
+      - Sai Life Sciences
+      - Aurigene
+      - Jubilant Biosys
+      - Charles River
+      - Evotec
+      - Pharmaron
+      - WuXi AppTec
+      - Crown Bioscience
+      - Eurofins Discovery
+      - Frontage Laboratories
+
+    competitor_cdmos:
+      - Syngene
+      - Aragen
+      - Sai Life Sciences
+      - Jubilant Biosys
+      - Piramal Pharma
+      - Lonza
+      - WuXi AppTec
+      - AGC Biologics
+      - Samsung Biologics
+      - Catalent
+
+    deal_types:
+      - Licensing
+      - Co Development
+      - Research Collaboration
+      - Strategic Alliance
+      - Technology Partnership
+      - Platform Partnership
+      - Manufacturing Agreement
+      - Acquisition
+      - Merger
+      - Joint Venture
+      - Funding
+      - Equity Investment
+      - Expansion
+      - Service Partnership
+      - Regulatory Collaboration
+      
+   regulatory section:
+      - FDA Modernization Act 2.0
+      - FDA NAM Program
+      - EMA NAMs
+      - OECD TG
+      - OECD Validation
+      - ICCVAM
+      - NC3Rs
+      - Validation Studies13 
+      - Regulatory Qualification14  
+      - Regulatory Acceptance
+
+    strategic_questions:
+      - Which NAM technologies are moving toward routine pharma adoption?
+      - Which pharma companies are investing most heavily in NAMs?
+      - Which organoid technologies are achieving commercial scale?
+      - Which organ-on-chip technologies are gaining industry adoption?
+      - Which CROs are building NAM capabilities?
+      - Which competitors are launching NAM service offerings?
+      - Which NAM companies are attractive partnership candidates?
+      - Which NAM companies are acquisition targets?
+      - Which NAM platforms are demonstrating superior human PK prediction?
+      - Which NAM platforms are demonstrating efficacy prediction capability?
+      - Which NAM platforms are demonstrating toxicology prediction capability?
+      - Which NAM technologies are reducing dependence on animal studies?
+      - Which NAM platforms are receiving regulatory recognition?
+      - Which disease areas are seeing the fastest NAM adoption?
+      - What barriers are slowing broad industry adoption?
+      - What is likely to become standard practice in the next 5 years?
+      - Which NAM technologies could realistically replace selected animal studies in the next 3 to 5 years?
+      - Which NAM technologies pose the greatest long-term disruption risk to traditional animal-based DMPK and toxicology services?
+      - What implications do NAM adoption trends have for CRO business models?
+      - What implications do NAM adoption trends have for CDMO business models?
