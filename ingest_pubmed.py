@@ -61,7 +61,7 @@ def fetch_summaries(ids):
         papers.append({
             "pubmed_id": pubmed_id,
             "title": record.get("title"),
-            "pubdate": record.get("pubdate")
+            "pubdate": record.get("pubdate"),
             "source": "PubMed"
         })
 
