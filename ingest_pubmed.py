@@ -85,7 +85,7 @@ if __name__ == "__main__":
     "antibody-drug conjugate"
     ]
     
-    query = " OR ".join(keywords)
+    query = ' OR '.join([f'"{k}"' for k in keywords])
     
     print(f"Using query: {query}")
     
