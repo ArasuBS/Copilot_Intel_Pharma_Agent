@@ -15,6 +15,7 @@ articles = []
 for article in feed.entries[:5]:
     articles.append({
         "title": re.sub('<.*?>', '', unescape(article.title)),
+        "link": article.link,
         "source": "Fierce Pharma"
     })
 
@@ -22,3 +23,4 @@ for article in articles:
     print("-" * 80)
     print(f"SOURCE: {article['source']}")
     print(f"TITLE: {article['title']}")
+    print(f"LINK: {article['link']}")
