@@ -1,6 +1,12 @@
 import json
+import yaml
 
 print("Classifier started")
+
+with open("topics.yaml", "r", encoding="utf-8") as f:
+    topics = yaml.safe_load(f)
+
+print(f"Topics loaded: {len(topics['topics'])}")
 
 with open("data/pubmed_results.json", "r", encoding="utf-8") as f:
     pubmed_records = json.load(f)
