@@ -21,20 +21,6 @@ adc_keywords = adc_topic["keywords"]
 
 print(f"ADC keywords loaded: {len(adc_keywords)}")
 
-nams_records = []
-
-for record in all_records:
-    title = record["title"]
-
-    for keyword in nams_keywords:
-        if keyword.lower() in title.lower():
-            nams_records.append(record)
-            break
-print(f"NAMS records found: {len(nams_records)}")
-
-for record in nams_records[:5]:
-    print(record["title"])
-
 nams_topic = next(
     topic for topic in topics["topics"]
     if topic["name"] == "NAMS"
@@ -102,6 +88,20 @@ for record in all_records:
 print(f"ADC records found: {len(adc_records)}")
 
 for record in adc_records[:5]:
+    print(record["title"])
+
+nams_records = []
+
+for record in all_records:
+    title = record["title"]
+
+    for keyword in nams_keywords:
+        if keyword.lower() in title.lower():
+            nams_records.append(record)
+            break
+print(f"NAMS records found: {len(nams_records)}")
+
+for record in nams_records[:5]:
     print(record["title"])
 
 print(f"Total records: {len(all_records)}")
