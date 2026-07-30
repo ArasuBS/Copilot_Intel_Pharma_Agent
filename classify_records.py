@@ -12,6 +12,15 @@ topic_names = [topic["name"] for topic in topics["topics"]]
 
 print(f"Available topics: {', '.join(topic_names)}")
 
+adc_topic = next(
+    topic for topic in topics["topics"]
+    if topic["name"] == "ADC"
+)
+
+adc_keywords = adc_topic["keywords"]
+
+print(f"ADC keywords loaded: {len(adc_keywords)}")
+
 with open("data/pubmed_results.json", "r", encoding="utf-8") as f:
     pubmed_records = json.load(f)
 
@@ -45,3 +54,6 @@ print("Source breakdown:")
 print(sources)
 
 print(f"Total records: {len(all_records)}")
+
+for keyword in adc_keywords[:5]:
+    print(keyword)
