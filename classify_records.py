@@ -20,3 +20,12 @@ with open("data/rss_results.json", "r", encoding="utf-8") as f:
 
 print(f"PubMed records: {len(pubmed_records)}")
 print(f"RSS records: {len(rss_records)}")
+
+all_records = pubmed_records + rss_records
+
+print("Sample titles:")
+
+for record in all_records[:3]:
+    print(record["title"])
+
+print(f"Total records: {len(all_records)}")
