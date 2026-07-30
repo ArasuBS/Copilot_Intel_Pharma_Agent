@@ -30,6 +30,14 @@ nams_keywords = nams_topic["keywords"]
 
 print(f"NAMS keywords loaded: {len(nams_keywords)}")
 
+nams_matches = 0
+
+for keyword in nams_keywords:
+    if keyword.lower() in first_record["title"].lower():
+        nams_matches += 1
+
+print(f"NAMS matches in first title: {nams_matches}")
+
 with open("data/pubmed_results.json", "r", encoding="utf-8") as f:
     pubmed_records = json.load(f)
 
@@ -52,6 +60,13 @@ print(pubmed_records[0]["title"])
 
 print("Sample RSS title:")
 print(rss_records[0]["title"])
+
+rss_title = rss_records[0]["title"]
+
+print("Checking first RSS title against NAMS keywords")
+
+for keyword in nams_keywords[:5]:
+    print(keyword)
 
 sources = {}
 
