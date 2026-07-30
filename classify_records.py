@@ -62,6 +62,20 @@ for record in all_records:
 print("Source breakdown:")
 print(sources)
 
+first_record = all_records[0]
+
+print("First record title:")
+print(first_record["title"])
+
+adc_match = False
+
+for keyword in adc_keywords:
+    if keyword.lower() in first_record["title"].lower():
+        adc_match = True
+        break
+
+print(f"ADC match: {adc_match}")
+
 print(f"Total records: {len(all_records)}")
 
 for keyword in adc_keywords[:5]:
