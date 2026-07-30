@@ -21,6 +21,15 @@ adc_keywords = adc_topic["keywords"]
 
 print(f"ADC keywords loaded: {len(adc_keywords)}")
 
+nams_topic = next(
+    topic for topic in topics["topics"]
+    if topic["name"] == "NAMS"
+)
+
+nams_keywords = nams_topic["keywords"]
+
+print(f"NAMS keywords loaded: {len(nams_keywords)}")
+
 with open("data/pubmed_results.json", "r", encoding="utf-8") as f:
     pubmed_records = json.load(f)
 
@@ -56,4 +65,8 @@ print(sources)
 print(f"Total records: {len(all_records)}")
 
 for keyword in adc_keywords[:5]:
+    print(keyword)
+print("Sample NAMS keywords:")
+
+for keyword in nams_keywords[:5]:
     print(keyword)
