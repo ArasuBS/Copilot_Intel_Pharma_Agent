@@ -76,6 +76,20 @@ for keyword in adc_keywords:
 
 print(f"ADC match: {adc_match}")
 
+adc_records = []
+
+for record in all_records:
+    title = record["title"]
+
+    for keyword in adc_keywords:
+        if keyword.lower() in title.lower():
+            adc_records.append(record)
+            break
+print(f"ADC records found: {len(adc_records)}")
+
+for record in adc_records[:5]:
+    print(record["title"])
+
 print(f"Total records: {len(all_records)}")
 
 for keyword in adc_keywords[:5]:
