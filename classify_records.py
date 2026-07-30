@@ -8,6 +8,10 @@ with open("topics.yaml", "r", encoding="utf-8") as f:
 
 print(f"Topics loaded: {len(topics['topics'])}")
 
+topic_names = [topic["name"] for topic in topics["topics"]]
+
+print(f"Available topics: {', '.join(topic_names)}")
+
 with open("data/pubmed_results.json", "r", encoding="utf-8") as f:
     pubmed_records = json.load(f)
 
