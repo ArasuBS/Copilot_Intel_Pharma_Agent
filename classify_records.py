@@ -23,9 +23,19 @@ print(f"RSS records: {len(rss_records)}")
 
 all_records = pubmed_records + rss_records
 
-print("Sample titles:")
+print("Sample PubMed title:")
+print(pubmed_records[0]["title"])
 
-for record in all_records[:3]:
-    print(record["title"])
+print("Sample RSS title:")
+print(rss_records[0]["title"])
+
+sources = {}
+
+for record in all_records:
+    source = record["source"]
+    sources[source] = sources.get(source, 0) + 1
+
+print("Source breakdown:")
+print(sources)
 
 print(f"Total records: {len(all_records)}")
