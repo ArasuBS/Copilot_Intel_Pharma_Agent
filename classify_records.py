@@ -23,6 +23,12 @@ print(f"RSS records: {len(rss_records)}")
 
 all_records = pubmed_records + rss_records
 
+for topic in topics["topics"]:
+    print(f"Topic: {topic['name']}")
+
+for topic in topics["topics"]:
+    print(f"{topic['name']} keywords: {len(topic['keywords'])}")
+
 print("Sample PubMed title:")
 print(pubmed_records[0]["title"])
 
