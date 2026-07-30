@@ -29,6 +29,10 @@ jobs:
       - name: Run RSS Script
         run: |          
           python ingest_rss.py
+          
+      - name: Run Classifier
+        run: |
+          python classify_records.py
 
       - name: Upload PubMed Results
         uses: actions/upload-artifact@v4
