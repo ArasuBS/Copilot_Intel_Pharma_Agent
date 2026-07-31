@@ -129,6 +129,15 @@ for record in nams_records:
 
 print(f"Total classified records: {len(classified_records)}")
 
+topic_counts = {}
+
+for record in classified_records:
+    for topic in record["topics"]:
+        topic_counts[topic] = topic_counts.get(topic, 0) + 1
+
+print("Topic counts:")
+print(topic_counts)
+
 with open("data/classified_records.json", "w", encoding="utf-8") as f:
     json.dump(
         classified_records,
