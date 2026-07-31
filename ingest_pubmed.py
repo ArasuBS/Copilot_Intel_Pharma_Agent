@@ -80,8 +80,12 @@ if __name__ == "__main__":
     topics = load_topics()
     
     adc = get_topic(topics, "ADC")
+    nams = get_topic(topics, "NAMS")
     
-    keywords = adc["keywords"][:2]
+    adc_keywords = adc["keywords"][:2]
+    nams_keywords = nams["keywords"][:2]
+    
+    keywords = adc_keywords + nams_keywords
     
     query = ' OR '.join([f'"{k}"' for k in keywords])
     
