@@ -51,3 +51,9 @@ jobs:
         with:
           name: classified-results
           path: data/classified_records.json
+
+      - name: Upload Classification Summary
+        uses: actions/upload-artifact@v4
+        with:
+          name: classification-summary
+          path: data/classification_summary.json
