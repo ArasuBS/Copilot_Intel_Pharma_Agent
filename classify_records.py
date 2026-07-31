@@ -28,6 +28,15 @@ nams_topic = next(
 
 nams_keywords = nams_topic["keywords"]
 
+bispecifics_topic = next(
+    topic for topic in topics["topics"]
+    if topic["name"] == "Bispecifics"
+)
+
+bispecifics_keywords = bispecifics_topic["keywords"]
+
+print(f"Bispecifics keywords loaded: {len(bispecifics_keywords)}")
+
 print(f"NAMS keywords loaded: {len(nams_keywords)}")
 
 with open("data/pubmed_results.json", "r", encoding="utf-8") as f:
