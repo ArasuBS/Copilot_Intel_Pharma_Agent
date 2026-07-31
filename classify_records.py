@@ -148,6 +148,22 @@ with open("data/classified_records.json", "w", encoding="utf-8") as f:
 
 print("Saved results to data/classified_records.json")
 
+summary = {
+    "total_records": len(all_records),
+    " results to data/classified_records_records),
+    "topic_counts": topic_counts
+}
+
+with open("data/classification_summary.json", "w", encoding="utf-8") as f:
+    json.dump(
+        summary,
+        f,
+        indent=2,
+        ensure_ascii=False
+    )
+
+print("Saved results to data/classification_summary.json")
+
 print("Tagged NAMS records:")
 
 for record in nams_records[:3]:
