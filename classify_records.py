@@ -150,7 +150,7 @@ print("Saved results to data/classified_records.json")
 
 summary = {
     "total_records": len(all_records),
-    " results to data/classified_records_records),
+    "classified_records": len(classified_records),
     "topic_counts": topic_counts
 }
 
