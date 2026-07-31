@@ -553,14 +553,14 @@ topics:
       - Will future DMPK workflows combine organoids, organ-on-chip systems, PBPK, QSP and digital twins?
       - Which competitors are building integrated experimental and computational NAM platforms?
       - What signals indicate that NAMs are transitioning from innovation projects to routine drug development tools?
-      
-    - name: Bispecifics
+       
+  - name: Bispecifics
     
     keywords:
       - Bispecific Antibody
       - Bispecific Antibodies
       - Bispecific antibody drug conjugates
-      - Tricpeficif antibody drug conjugates
+      - Trispecific antibody drug conjugates
       - BsAb
       - T Cell Engager
       - T-cell Engager
