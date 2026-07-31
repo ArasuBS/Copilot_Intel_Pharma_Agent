@@ -81,11 +81,13 @@ if __name__ == "__main__":
     
     adc = get_topic(topics, "ADC")
     nams = get_topic(topics, "NAMS")
+    bispecifics = get_topic(topics, "Bispecifics")
     
     adc_keywords = adc["keywords"][:2]
     nams_keywords = nams["keywords"][:7]
+    bispecific_keywords = bispecifics["keywords"][:5]
     
-    keywords = adc_keywords + nams_keywords
+    keywords = adc_keywords + nams_keywords + bispecific_keywords
     
     query = ' OR '.join([f'"{k}"' for k in keywords])
     
