@@ -233,7 +233,7 @@ topics:
 
   - name: NAMS
 
-    keywords:
+     keywords:
       - Spheroid
       - Patient Derived Organoid
       - Tumor Organoid
@@ -553,3 +553,68 @@ topics:
       - Will future DMPK workflows combine organoids, organ-on-chip systems, PBPK, QSP and digital twins?
       - Which competitors are building integrated experimental and computational NAM platforms?
       - What signals indicate that NAMs are transitioning from innovation projects to routine drug development tools?
+      
+- name: Bispecifics
+
+    keywords:
+      - Bispecific Antibody
+      - Bispecific Antibodies
+      - BsAb
+      - T Cell Engager
+      - T-cell Engager
+      - T Cell Redirecting Antibody
+      - T-cell Redirecting Antibody
+      - Multispecific Antibody
+      - Dual Targeting Antibody
+      - Dual Specific Antibody
+      - CD3 Engager
+      - TCE
+  
+    targets:
+      - CD3
+      - BCMA
+      - GPRC5D
+      - HER2
+      - EGFR
+      - MET
+      - DLL3
+      - PSMA
+      - B7H3
+      - CLDN18.2
+      - TROP2
+  
+    products:
+      - Blinatumomab
+      - Tecvayli
+      - Talvey
+      - Columvi
+      - Lunsumio
+      - Imdelltra
+  
+    companies:
+      - Roche
+      - Genmab
+      - Amgen
+      - Johnson and Johnson
+      - Regeneron
+      - AstraZeneca
+      - Pfizer
+      - AbbVie
+      - Merus
+      - Zymeworks
+  
+    deal_types:
+      - Licensing
+      - Collaboration
+      - Co Development
+      - Platform Partnership
+      - Strategic Alliance
+      - Acquisition
+      - Merger
+  
+    strategic_questions:
+      - Which bispecific targets are gaining momentum?
+      - Which companies are leading clinical development?
+      - Which tumor types are attracting investment?
+      - Which bispecific formats are showing differentiation?
+      - Which partnerships indicate platform validation?
