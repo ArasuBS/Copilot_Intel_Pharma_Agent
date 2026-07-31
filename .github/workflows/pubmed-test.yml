@@ -45,3 +45,9 @@ jobs:
         with:
           name: rss-results
           path: data/rss_results.json
+      
+      - name: Upload Classified Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: classified-results
+          path: data/classified_records.json
