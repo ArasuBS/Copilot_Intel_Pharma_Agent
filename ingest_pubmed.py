@@ -83,7 +83,7 @@ if __name__ == "__main__":
     nams = get_topic(topics, "NAMS")
     
     adc_keywords = adc["keywords"][:2]
-    nams_keywords = nams["keywords"][:2]
+    nams_keywords = nams["keywords"]
     
     keywords = adc_keywords + nams_keywords
     
