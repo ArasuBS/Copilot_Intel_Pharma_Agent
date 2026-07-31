@@ -98,7 +98,7 @@ for record in adc_records[:5]:
     print(record["title"])
 
 for record in adc_records:
-    record["topic"] = "ADC"
+    record["topics"] = ["ADC"]
 
 classified_records = []
 
@@ -122,7 +122,7 @@ for record in all_records:
 print(f"NAMS records found: {len(nams_records)}")
 
 for record in nams_records:
-    record["topic"] = "NAMS"
+    record["topics"] = ["NAMS"]
 
 for record in nams_records:
     classified_records.append(record)
