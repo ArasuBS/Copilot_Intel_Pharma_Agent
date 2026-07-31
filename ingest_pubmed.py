@@ -95,6 +95,12 @@ if __name__ == "__main__":
     print(nams_keywords)
 
     print(f"Keyword count: {len(keywords)}")
+
+    print("ADC keywords:")
+    print(adc_keywords)
+
+    print("NAMS keywords:")
+    print(nams_keywords)
     
     ids = search_pubmed(query)
 
