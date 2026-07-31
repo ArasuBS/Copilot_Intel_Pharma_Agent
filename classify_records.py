@@ -100,6 +100,11 @@ for record in adc_records[:5]:
 for record in adc_records:
     record["topic"] = "ADC"
 
+classified_records = []
+
+for record in adc_records:
+    classified_records.append(record)
+
 print("Tagged ADC records:")
 
 for record in adc_records[:3]:
@@ -118,6 +123,11 @@ print(f"NAMS records found: {len(nams_records)}")
 
 for record in nams_records:
     record["topic"] = "NAMS"
+
+for record in nams_records:
+    classified_records.append(record)
+
+print(f"Total classified records: {len(classified_records)}")
 
 print("Tagged NAMS records:")
 
