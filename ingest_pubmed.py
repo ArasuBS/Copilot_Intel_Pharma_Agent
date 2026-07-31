@@ -93,8 +93,6 @@ if __name__ == "__main__":
     
     ids = search_pubmed(query)
 
-    ids = search_pubmed(query)
-
     papers = fetch_summaries(ids)
 
     save_results(papers)
