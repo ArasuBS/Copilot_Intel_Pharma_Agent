@@ -233,7 +233,7 @@ topics:
 
   - name: NAMS
 
-     keywords:
+    keywords:
       - Spheroid
       - Patient Derived Organoid
       - Tumor Organoid
@@ -554,8 +554,8 @@ topics:
       - Which competitors are building integrated experimental and computational NAM platforms?
       - What signals indicate that NAMs are transitioning from innovation projects to routine drug development tools?
       
-  - name: Bispecifics
-  
+    - name: Bispecifics
+    
     keywords:
       - Bispecific Antibody
       - Bispecific Antibodies
