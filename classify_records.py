@@ -108,7 +108,7 @@ for record in adc_records:
 print("Tagged ADC records:")
 
 for record in adc_records[:3]:
-    print(record["topic"], "-", record["title"])
+    print(record["topics"], "-", record["title"])
 
 nams_records = []
 
@@ -167,7 +167,7 @@ print("Saved results to data/classification_summary.json")
 print("Tagged NAMS records:")
 
 for record in nams_records[:3]:
-    print(record["topic"], "-", record["title"])
+    print(record["topics"], "-", record["title"])
 
 for record in nams_records[:5]:
     print(record["title"])
