@@ -124,6 +124,14 @@ for record in all_records:
             break
 print(f"NAMS records found: {len(nams_records)}")
 
+for record in nams_records:
+    record["topic"] = "NAMS"
+
+print("Tagged NAMS records:")
+
+for record in nams_records[:3]:
+    print(record["topic"], "-", record["title"])
+
 for record in nams_records[:5]:
     print(record["title"])
 
