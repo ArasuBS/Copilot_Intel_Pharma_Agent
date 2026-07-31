@@ -129,6 +129,16 @@ for record in nams_records:
 
 print(f"Total classified records: {len(classified_records)}")
 
+with open("data/classified_records.json", "w", encoding="utf-8") as f:
+    json.dump(
+        classified_records,
+        f,
+        indent=2,
+        ensure_ascii=False
+    )
+
+print("Saved results to data/classified_records.json")
+
 print("Tagged NAMS records:")
 
 for record in nams_records[:3]:
