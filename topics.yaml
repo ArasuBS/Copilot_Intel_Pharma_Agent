@@ -556,7 +556,7 @@ topics:
       
   - name: Bispecifics
   
-      keywords:
+    keywords:
       - Bispecific Antibody
       - Bispecific Antibodies
       - Bispecific antibody drug conjugates
@@ -613,7 +613,7 @@ topics:
       - Strategic Alliance
       - Acquisition
       - Merger
-  
+    
     strategic_questions:
       - Which bispecific targets are gaining momentum?
       - Which companies are leading clinical development?
