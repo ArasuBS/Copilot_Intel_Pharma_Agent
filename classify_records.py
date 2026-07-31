@@ -21,6 +21,14 @@ adc_keywords = adc_topic["keywords"]
 
 print(f"ADC keywords loaded: {len(adc_keywords)}")
 
+for record in adc_records:
+    record["topic"] = "ADC"
+    
+print("Tagged ADC records:")
+
+for record in adc_records[:3]:
+    print(record["topic"], "-", record["title"])
+
 nams_topic = next(
     topic for topic in topics["topics"]
     if topic["name"] == "NAMS"
