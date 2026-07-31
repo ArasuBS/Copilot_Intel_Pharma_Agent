@@ -90,6 +90,8 @@ if __name__ == "__main__":
     query = ' OR '.join([f'"{k}"' for k in keywords])
     
     print(f"Using query: {query}")
+
+    print(f"Keyword count: {len(keywords)}")
     
     ids = search_pubmed(query)
 
