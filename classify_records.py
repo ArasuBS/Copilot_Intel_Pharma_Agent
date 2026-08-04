@@ -130,11 +130,34 @@ for record in all_records:
             break
 print(f"NAMS records found: {len(nams_records)}")
 
+bispecific_records = []
+
+for record in all_records:
+    title = record["title"]
+
+    for keyword in bispecifics_keywords:
+        if keyword.lower() in title.lower():
+            bispecific_records.append(record)
+            break
+
+print(f"Bispecific records found: {len(bispecific_records)}")
+
+for record in bispecific_records:
+    record["topics"] = ["Bispecifics"]
+
 for record in nams_records:
     record["topics"] = ["NAMS"]
 
 for record in nams_records:
     classified_records.append(record)
+    
+for record in bispecific_records:
+    classified_records.append(record)
+
+print("Tagged Bispecific records:")
+
+for record in bispecific_records[:3]:
+    print(record["topics"], "-", record["title"])
 
 print(f"Total classified records: {len(classified_records)}")
 
