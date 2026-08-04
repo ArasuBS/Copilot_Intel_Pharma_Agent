@@ -32,10 +32,7 @@ adc_terms = (
 )
 
 print(f"ADC keywords loaded: {len(adc_keywords)}")
-
-print(fboth** with:
-
-ation terms: {len(adc_terms)}")
+print(f"ADC classification terms: {len(adc_terms)}")
 
 nams_topic = next(
     topic for topic in topics["topics"]
