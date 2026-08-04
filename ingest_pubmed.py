@@ -82,12 +82,14 @@ if __name__ == "__main__":
     adc = get_topic(topics, "ADC")
     nams = get_topic(topics, "NAMS")
     bispecifics = get_topic(topics, "Bispecifics")
+    cld = get_topic(topics, "Cell Line Development")
     
     adc_keywords = adc["keywords"][:2]
     nams_keywords = nams["keywords"][:7]
     bispecific_keywords = bispecifics["keywords"][:5]
+    cld_keywords = cld["keywords"][:5]
     
-    keywords = adc_keywords + nams_keywords + bispecific_keywords
+    keywords = adc_keywords + nams_keywords + bispecific_keywords + cld_keywords
     
     query = ' OR '.join([f'"{k}"' for k in keywords])
     
@@ -95,6 +97,9 @@ if __name__ == "__main__":
 
     print(adc_keywords)
     print(nams_keywords)
+
+    print("CLD keywords:")
+    print(cld_keywords)
 
     print(f"Keyword count: {len(keywords)}")
 
