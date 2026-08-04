@@ -16,7 +16,7 @@ def search_pubmed(term="antibody drug conjugate"):
     params = {
         "db": "pubmed",
         "term": term,
-        "retmax": 10,
+        "retmax": 30,
         "retmode": "json"
     }
 
