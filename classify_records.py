@@ -48,6 +48,15 @@ bispecifics_topic = next(
 
 bispecifics_keywords = bispecifics_topic["keywords"]
 
+cld_topic = next(
+    topic for topic in topics["topics"]
+    if topic["name"] == "Cell Line Development"
+)
+
+cld_keywords = cld_topic["keywords"]
+
+print(f"CLD keywords loaded: {len(cld_keywords)}")
+
 print(f"Bispecifics keywords loaded: {len(bispecifics_keywords)}")
 
 print(f"NAMS keywords loaded: {len(nams_keywords)}")
@@ -155,6 +164,21 @@ for record in all_records:
 
 print(f"Bispecific records found: {len(bispecific_records)}")
 
+cld_records = []
+
+for record in all_records:
+    title = record["title"]
+
+    for keyword in cld_keywords:
+        if keyword.lower() in title.lower():
+            cld_records.append(record)
+            break
+
+print(f"CLD records found: {len(cld_records)}")
+
+for record in cld_records:
+    record["topics"] = ["Cell Line Development"]
+
 for record in bispecific_records:
     record["topics"] = ["Bispecifics"]
 
@@ -166,6 +190,14 @@ for record in nams_records:
     
 for record in bispecific_records:
     classified_records.append(record)
+
+for record in cld_records:
+    classified_records.append(record)
+
+print("Tagged CLD records:")
+
+for record in cld_records[:3]:
+    print(record["topics"], "-", record["title"])
 
 print("Tagged Bispecific records:")
 
