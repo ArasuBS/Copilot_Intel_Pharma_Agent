@@ -18,8 +18,24 @@ adc_topic = next(
 )
 
 adc_keywords = adc_topic["keywords"]
+adc_targets = adc_topic["targets"]
+adc_products = adc_topic["products"]
+adc_payloads = adc_topic["payloads"]
+adc_technologies = adc_topic["technologies"]
+
+adc_terms = (
+    adc_keywords
+    + adc_targets
+    + adc_products
+    + adc_payloads
+    + adc_technologies
+)
 
 print(f"ADC keywords loaded: {len(adc_keywords)}")
+
+print(fboth** with:
+
+ation terms: {len(adc_terms)}")
 
 nams_topic = next(
     topic for topic in topics["topics"]
@@ -85,7 +101,7 @@ print(first_record["title"])
 
 adc_match = False
 
-for keyword in adc_keywords:
+for keyword in adc_terms:
     if keyword.lower() in first_record["title"].lower():
         adc_match = True
         break
@@ -97,7 +113,7 @@ adc_records = []
 for record in all_records:
     title = record["title"]
 
-    for keyword in adc_keywords:
+    for keyword in adc_terms:
         if keyword.lower() in title.lower():
             adc_records.append(record)
             break
