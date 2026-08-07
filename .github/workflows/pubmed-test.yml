@@ -34,26 +34,8 @@ jobs:
         run: |
           python classify_records.py
 
-      - name: Upload PubMed Results
+      - name: Upload Intelligence Package
         uses: actions/upload-artifact@v4
         with:
-          name: pubmed-results
-          path: data/pubmed_results.json
-
-      - name: Upload RSS Results
-        uses: actions/upload-artifact@v4
-        with:
-          name: rss-results
-          path: data/rss_results.json
-      
-      - name: Upload Classified Results
-        uses: actions/upload-artifact@v4
-        with:
-          name: classified-results
-          path: data/classified_records.json
-
-      - name: Upload Classification Summary
-        uses: actions/upload-artifact@v4
-        with:
-          name: classification-summary
-          path: data/classification_summary.json
+          name: pharma-intelligence-output
+          path: data/*.json
