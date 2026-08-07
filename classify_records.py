@@ -103,11 +103,6 @@ for record in all_records:
         if keyword.lower() in title.lower():
             adc_records.append(record)
             break
-print()
-print("=" * 60)
-print("ADC")
-print("=" * 60)
-print(f"Records Identified : {len(adc_records)}")
 
 for record in adc_records:
     record["topics"] = ["ADC"]
@@ -126,11 +121,6 @@ for record in all_records:
         if keyword.lower() in title.lower():
             nams_records.append(record)
             break
-print()
-print("=" * 60)
-print("NAMS")
-print("=" * 60)
-print(f"Records Identified : {len(nams_records)}")
 
 bispecific_records = []
 
@@ -142,12 +132,6 @@ for record in all_records:
             bispecific_records.append(record)
             break
 
-print()
-print("=" * 60)
-print("BISPECIFICS")
-print("=" * 60)
-print(f"Records Identified : {len(bispecific_records)}")
-
 cld_records = []
 
 for record in all_records:
@@ -157,12 +141,6 @@ for record in all_records:
         if keyword.lower() in title.lower():
             cld_records.append(record)
             break
-
-print()
-print("=" * 60)
-print("CELL LINE DEVELOPMENT")
-print("=" * 60)
-print(f"Records Identified : {len(cld_records)}")
 
 for record in cld_records:
     record["topics"] = ["Cell Line Development"]
@@ -181,8 +159,6 @@ for record in bispecific_records:
 
 for record in cld_records:
     classified_records.append(record)
-
-print(f"Total classified records: {len(classified_records)}")
 
 topic_counts = {}
 
