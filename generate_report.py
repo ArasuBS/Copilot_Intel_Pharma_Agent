@@ -50,7 +50,7 @@ for topic, topic_records in topic_groups.items():
 
     report_lines.append("")
 
-with open("report.md", "w", encoding="utf-8") as f:
+with open("data/report.md", "w", encoding="utf-8") as f:
     f.write("\n".join(report_lines))
 
 print("Generated report.md")
