@@ -1,5 +1,17 @@
 import json
 import yaml
+import re
+
+def title_matches_term(title, term):
+    title_text = title.lower()
+    term_text = term.lower().strip()
+
+    if not term_text:
+        return False
+
+    pattern = r"(?<![a-z0-9])" + re.escape(term_text) + r"(?![a-z0-9])"
+
+    return re.search(pattern, title_text) is not None
 
 print("Classifier started")
 
@@ -94,86 +106,45 @@ for record in all_records:
 print("Source breakdown:")
 print(sources)
 
-adc_records = []
-
-for record in all_records:
-    title = record["title"]
-
-    for keyword in adc_terms:
-        if keyword.lower() in title.lower():
-            adc_records.append(record)
-            break
-
-for record in adc_records:
-    record["topics"] = ["ADC"]
+classification_groups = [
+    ("ADC", adc_terms),
+    ("NAMS", nams_keywords),
+    ("Bispecifics", bispecifics_keywords),
+    ("Cell Line Development", cld_keywords)
+]
 
 classified_records = []
-
-for record in adc_records:
-    classified_records.append(record)
-
-nams_records = []
-
-for record in all_records:
-    title = record["title"]
-
-    for keyword in nams_keywords:
-        if keyword.lower() in title.lower():
-            nams_records.append(record)
-            break
-
-bispecific_records = []
-
-for record in all_records:
-    title = record["title"]
-
-    for keyword in bispecifics_keywords:
-        if keyword.lower() in title.lower():
-            bispecific_records.append(record)
-            break
-
-cld_records = []
-
-for record in all_records:
-    title = record["title"]
-
-    for keyword in cld_keywords:
-        if keyword.lower() in title.lower():
-            cld_records.append(record)
-            break
-
-for record in cld_records:
-    record["topics"] = ["Cell Line Development"]
-
-for record in bispecific_records:
-    record["topics"] = ["Bispecifics"]
-
-for record in nams_records:
-    record["topics"] = ["NAMS"]
-
-for record in nams_records:
-    classified_records.append(record)
-    
-for record in bispecific_records:
-    classified_records.append(record)
-
-for record in cld_records:
-    classified_records.append(record)
-
-unique_records = []
 seen_titles = set()
 
-for record in classified_records:
+for record in all_records:
 
-    title = record["title"].strip().lower()
+    normalized_title = record["title"].strip().lower()
 
-    if title in seen_titles:
+    if normalized_title in seen_titles:
         continue
 
-    seen_titles.add(title)
-    unique_records.append(record)
+    seen_titles.add(normalized_title)
 
-classified_records = unique_records
+    matched_topics = []
+    matched_keywords = {}
+
+    for topic_name, term_list in classification_groups:
+
+        topic_matches = []
+
+        for keyword in term_list:
+            if title_matches_term(record["title"], keyword):
+                topic_matches.append(keyword)
+
+        if topic_matches:
+            matched_topics.append(topic_name)
+            matched_keywords[topic_name] = topic_matches
+
+    if matched_topics:
+        classified_record = record.copy()
+        classified_record["topics"] = matched_topics
+        classified_record["matched_keywords"] = matched_keywords
+        classified_records.append(classified_record)
 
 topic_counts = {}
 
