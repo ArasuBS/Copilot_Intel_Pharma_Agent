@@ -41,4 +41,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: pharma-intelligence-output
-          path: data/*.json
+          path: |
+            data/*.json
+            data/report.md
