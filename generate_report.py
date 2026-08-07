@@ -43,9 +43,19 @@ for topic, topic_records in topic_groups.items():
         f"## {topic} ({len(topic_records)})\n"
     )
 
+    seen_titles = set()
+
     for record in topic_records:
+
+        title = record["title"]
+
+        if title in seen_titles:
+            continue
+
+        seen_titles.add(title)
+
         report_lines.append(
-            f"- {record['title']}"
+            f"- {title}"
         )
 
     report_lines.append("")
