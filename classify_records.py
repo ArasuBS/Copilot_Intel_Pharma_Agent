@@ -72,24 +72,18 @@ print(f"RSS records: {len(rss_records)}")
 
 all_records = pubmed_records + rss_records
 
-for topic in topics["topics"]:
-    print(f"Topic: {topic['name']}")
+print()
+print("=" * 60)
+print("PHARMA INTELLIGENCE CLASSIFIER")
+print("=" * 60)
+print()
 
-for topic in topics["topics"]:
-    print(f"{topic['name']} keywords: {len(topic['keywords'])}")
-
-print("Sample PubMed title:")
-print(pubmed_records[0]["title"])
-
-print("Sample RSS title:")
-print(rss_records[0]["title"])
-
-rss_title = rss_records[0]["title"]
-
-print("Checking first RSS title against NAMS keywords")
-
-for keyword in nams_keywords[:5]:
-    print(keyword)
+print("INPUT SUMMARY")
+print("-" * 60)
+print(f"PubMed Records : {len(pubmed_records)}")
+print(f"RSS Records    : {len(rss_records)}")
+print(f"Total Records  : {len(all_records)}")
+print()
 
 sources = {}
 
@@ -100,20 +94,6 @@ for record in all_records:
 print("Source breakdown:")
 print(sources)
 
-first_record = all_records[0]
-
-print("First record title:")
-print(first_record["title"])
-
-adc_match = False
-
-for keyword in adc_terms:
-    if keyword.lower() in first_record["title"].lower():
-        adc_match = True
-        break
-
-print(f"ADC match: {adc_match}")
-
 adc_records = []
 
 for record in all_records:
@@ -123,10 +103,11 @@ for record in all_records:
         if keyword.lower() in title.lower():
             adc_records.append(record)
             break
-print(f"ADC records found: {len(adc_records)}")
-
-for record in adc_records[:5]:
-    print(record["title"])
+print()
+print("=" * 60)
+print("ADC")
+print("=" * 60)
+print(f"Records Identified : {len(adc_records)}")
 
 for record in adc_records:
     record["topics"] = ["ADC"]
@@ -135,11 +116,6 @@ classified_records = []
 
 for record in adc_records:
     classified_records.append(record)
-
-print("Tagged ADC records:")
-
-for record in adc_records[:3]:
-    print(record["topics"], "-", record["title"])
 
 nams_records = []
 
@@ -150,7 +126,11 @@ for record in all_records:
         if keyword.lower() in title.lower():
             nams_records.append(record)
             break
-print(f"NAMS records found: {len(nams_records)}")
+print()
+print("=" * 60)
+print("NAMS")
+print("=" * 60)
+print(f"Records Identified : {len(nams_records)}")
 
 bispecific_records = []
 
@@ -162,7 +142,11 @@ for record in all_records:
             bispecific_records.append(record)
             break
 
-print(f"Bispecific records found: {len(bispecific_records)}")
+print()
+print("=" * 60)
+print("BISPECIFICS")
+print("=" * 60)
+print(f"Records Identified : {len(bispecific_records)}")
 
 cld_records = []
 
@@ -174,7 +158,11 @@ for record in all_records:
             cld_records.append(record)
             break
 
-print(f"CLD records found: {len(cld_records)}")
+print()
+print("=" * 60)
+print("CELL LINE DEVELOPMENT")
+print("=" * 60)
+print(f"Records Identified : {len(cld_records)}")
 
 for record in cld_records:
     record["topics"] = ["Cell Line Development"]
@@ -194,16 +182,6 @@ for record in bispecific_records:
 for record in cld_records:
     classified_records.append(record)
 
-print("Tagged CLD records:")
-
-for record in cld_records[:3]:
-    print(record["topics"], "-", record["title"])
-
-print("Tagged Bispecific records:")
-
-for record in bispecific_records[:3]:
-    print(record["topics"], "-", record["title"])
-
 print(f"Total classified records: {len(classified_records)}")
 
 topic_counts = {}
@@ -212,8 +190,17 @@ for record in classified_records:
     for topic in record["topics"]:
         topic_counts[topic] = topic_counts.get(topic, 0) + 1
 
-print("Topic counts:")
-print(topic_counts)
+print()
+print("=" * 60)
+print("CLASSIFICATION SUMMARY")
+print("=" * 60)
+
+for topic, count in topic_counts.items():
+    print(f"{topic:<25} {count}")
+
+print()
+print(f"Total Classified : {len(classified_records)}")
+print(f"Total Records    : {len(all_records)}")
 
 with open("data/classified_records.json", "w", encoding="utf-8") as f:
     json.dump(
@@ -240,20 +227,3 @@ with open("data/classification_summary.json", "w", encoding="utf-8") as f:
     )
 
 print("Saved results to data/classification_summary.json")
-
-print("Tagged NAMS records:")
-
-for record in nams_records[:3]:
-    print(record["topics"], "-", record["title"])
-
-for record in nams_records[:5]:
-    print(record["title"])
-
-print(f"Total records: {len(all_records)}")
-
-for keyword in adc_keywords[:5]:
-    print(keyword)
-print("Sample NAMS keywords:")
-
-for keyword in nams_keywords[:5]:
-    print(keyword)
