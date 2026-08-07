@@ -650,3 +650,71 @@ All coding instructions should be given as:
 Avoid high-level programming instructions.
 
 Provide step-by-step implementation guidance.
+
+# Project Status
+
+Current Milestone
+
+Clean classifier output log
+
+Next Milestone
+
+Human-readable report generation
+
+Open Questions
+
+- How should trend history be stored?
+- Should signals be stored in JSON or SQLite?
+- When should abstract retrieval be added?
+
+# Change Log
+
+## 2026-08-07
+
+### Workflow
+
+- Changed artifact output from four separate downloads:
+  - pubmed-results
+  - rss-results
+  - classified-results
+  - classification-summary
+
+to a single downloadable artifact:
+
+- pharma-intelligence-output.zip
+
+### Classifier Log
+
+- Removed noisy debugging information.
+- Removed keyword count reporting from workflow log.
+- Standardized reporting around classification vocabulary size.
+
+Current log displays:
+
+- ADC classification terms
+- NAMS classification terms
+- Bispecific classification terms
+- CLD classification terms
+
+### Architecture Decisions
+
+- Collectors collect.
+- Classifier classifies.
+- No modality-specific logic inside collectors.
+- Historical learning will be based on structured signals, not narrative reports.
+
+### Future Direction Confirmed
+
+Planned evolution:
+
+Collection
+↓
+Classification
+↓
+Reporting
+↓
+Historical Signal Storage
+↓
+Trend Analysis
+↓
+Strategic Insights
