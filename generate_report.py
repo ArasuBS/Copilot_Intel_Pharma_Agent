@@ -1,10 +1,10 @@
 import json
 from datetime import datetime
 
-with open("classified_records.json", "r", encoding="utf-8") as f:
+with open("data/classified_records.json", "r", encoding="utf-8") as f:
     records = json.load(f)
 
-with open("classification_summary.json", "r", encoding="utf-8") as f:
+with open("data/classification_summary.json", "r", encoding="utf-8") as f:
     summary = json.load(f)
 
 report_lines = []
