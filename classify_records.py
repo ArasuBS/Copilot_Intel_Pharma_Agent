@@ -160,6 +160,21 @@ for record in bispecific_records:
 for record in cld_records:
     classified_records.append(record)
 
+unique_records = []
+seen_titles = set()
+
+for record in classified_records:
+
+    title = record["title"].strip().lower()
+
+    if title in seen_titles:
+        continue
+
+    seen_titles.add(title)
+    unique_records.append(record)
+
+classified_records = unique_records
+
 topic_counts = {}
 
 for record in classified_records:
